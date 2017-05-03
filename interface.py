@@ -7,7 +7,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from auto_reply.views import auto_reply_main  # 修改这里
 
-WEIXIN_TOKEN = 'write-a-value'
+WEIXIN_TOKEN = 'non'
 
 
 @csrf_exempt
