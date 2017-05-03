@@ -25,7 +25,9 @@ SECRET_KEY = 'zq%a-1tu7^0c889dj$q#p4=za%y&m1j%h(-$1bnkd-)(3b#_#z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "thetower.space",
+]
 
 
 # Application definition
