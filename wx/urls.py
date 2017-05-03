@@ -18,6 +18,6 @@ from django.contrib import admin
 from pywx import views as wx_views
 
 urlpatterns = [
-    url(r'^$', wx_views.index),
+    url(r'^$', wx_views.weixin_main),
     url(r'^admin/', admin.site.urls),
 ]
