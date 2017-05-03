@@ -5,7 +5,7 @@ from lxml import etree
 from django.utils.encoding import smart_str
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
-from auto_reply.views import auto_reply_main  # 修改这里
+#from auto_reply.views import auto_reply_main  # 修改这里
 
 WEIXIN_TOKEN = 'non'
 
@@ -34,5 +34,5 @@ def weixin_main(request):
     else:
         xml_str = smart_str(request.body)
         request_xml = etree.fromstring(xml_str)
-        response_xml = auto_reply_main(request_xml)  # 修改这里
-        return HttpResponse(response_xml)
+#        response_xml = auto_reply_main(request_xml)  # 修改这里
+#        return HttpResponse(response_xml)
