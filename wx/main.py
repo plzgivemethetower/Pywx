@@ -3,6 +3,7 @@ import werobot
 robot = werobot.WeRoBot(token='non')
 robot.config["APP_ID"] = "wx9742a414146d815a"
 robot.config["APP_SECRET"] = "628c6b7f77c9f0ad356174ddd6ad2c64"
+robot.config['ENCODING_AES_KEY'] = 'zDSkLBNeNTNd5uku0JfeOJkT5H34GirtH8sMeJ97BvY'
 @robot.text
 def hello(message):
     if message == "小黄歌":
