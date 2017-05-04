@@ -19,5 +19,6 @@ from pywx import views as wx_views
 
 urlpatterns = [
     url(r'^wx/$', wx_views.add,name="add"),
+    url(r'^wx/(\d+)/(\d+)/$',wx_views.add2,name = "add2"),
     url(r'^admin/', admin.site.urls),
 ]
